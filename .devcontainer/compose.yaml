@@ -1,0 +1,12 @@
+name: frost-dev-bot
+
+services:
+  devcontainer:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ..:/workspace:cached
+    working_dir: /workspace
+    command: sleep infinity
+    init: true # For "sleep infinity"

@@ -1,0 +1,11 @@
+{
+    "name": "frost-dev-bot",
+    "dockerComposeFile": "./compose.yaml",
+    "service": "devcontainer",
+    "postCreateCommand": "/workspace/.devcontainer/post_create.sh",
+    "workspaceFolder": "/workspace",
+    "remoteUser": "vscode",
+    "mounts": [
+        "source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached,uid=1000,gid=1000"
+    ]
+}
