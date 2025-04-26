@@ -13,7 +13,8 @@
     "jsr:@std/net@^1.0.4": "1.0.4",
     "jsr:@std/path@^1.0.9": "1.0.9",
     "jsr:@std/streams@^1.0.9": "1.0.9",
-    "npm:@octokit/webhooks@^13.8.0": "13.8.0"
+    "npm:@octokit/webhooks@^13.8.0": "13.8.0",
+    "npm:misskey-js@^2025.4.1-alpha.2": "2025.4.1-alpha.2"
   },
   "jsr": {
     "@std/assert@1.0.13": {
@@ -95,6 +96,23 @@
         "@octokit/request-error",
         "@octokit/webhooks-methods"
       ]
+    },
+    "@simplewebauthn/types@12.0.0": {
+      "integrity": "sha512-q6y8MkoV8V8jB4zzp18Uyj2I7oFp2/ONL8c3j8uT06AOWu3cIChc1au71QYHrP2b+xDapkGTiv+9lX7xkTlAsA=="
+    },
+    "eventemitter3@5.0.1": {
+      "integrity": "sha512-GWkBvjiSZK87ELrYOSESUYeVIc9mvLLf/nXalMOS5dYrgZq9o5OVkbZAVM06CVxYsCwH9BDZFPlQTlPA1j4ahA=="
+    },
+    "misskey-js@2025.4.1-alpha.2": {
+      "integrity": "sha512-+rPhm1E12bafgXy7dWs4T8hw+bOmaiBDKBcziOCj6C3xXm2ylfAGH+FliLUTdYrDoQ5bRMoA78/Z6uv0lsg1lw==",
+      "dependencies": [
+        "@simplewebauthn/types",
+        "eventemitter3",
+        "reconnecting-websocket"
+      ]
+    },
+    "reconnecting-websocket@4.4.0": {
+      "integrity": "sha512-D2E33ceRPga0NvTDhJmphEgJ7FUYF0v4lr1ki0csq06OdlxKfugGzN0dSkxM/NfqCxYELK4KcaTOUOjTV6Dcng=="
     }
   },
   "workspace": {
@@ -102,7 +120,8 @@
       "jsr:@std/assert@1",
       "jsr:@std/dotenv@~0.225.3",
       "jsr:@std/http@1",
-      "npm:@octokit/webhooks@^13.8.0"
+      "npm:@octokit/webhooks@^13.8.0",
+      "npm:misskey-js@^2025.4.1-alpha.2"
     ]
   }
 }
