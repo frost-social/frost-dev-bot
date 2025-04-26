@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "dev": "deno serve --watch -R main.ts",
+    "dev": "deno serve --watch -R src/main.ts",
     "test":"deno test --allow-read=. --allow-env",
     "deploy": "deno run --allow-read=. --allow-env --allow-run scripts/deploy.ts",
     "deploy-prod": "deno run --allow-read=. --allow-env --allow-run scripts/deploy.ts --prod"
