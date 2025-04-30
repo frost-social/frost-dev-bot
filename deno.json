@@ -1,9 +1,9 @@
 {
   "tasks": {
     "dev": "deno serve --watch -R src/main.ts",
-    "test":"deno test --allow-read=. --allow-env",
-    "deploy": "deno run --allow-read=. --allow-env --allow-run scripts/deploy.ts",
-    "deploy-prod": "deno run --allow-read=. --allow-env --allow-run scripts/deploy.ts --prod"
+    "test": "deno test --allow-env --env-file=.env",
+    "deploy": "deno run --allow-env --env-file=.env --allow-run=deployctl scripts/deploy.ts",
+    "deploy-prod": "deno run --allow-env --env-file=.env --allow-run=deployctl scripts/deploy.ts --prod"
   },
   "imports": {
     "@octokit/webhooks": "npm:@octokit/webhooks@^13.8.0",
