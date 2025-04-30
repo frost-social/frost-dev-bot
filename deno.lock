@@ -3,7 +3,6 @@
   "specifiers": {
     "jsr:@std/assert@1": "1.0.13",
     "jsr:@std/cli@^1.0.17": "1.0.17",
-    "jsr:@std/dotenv@~0.225.3": "0.225.3",
     "jsr:@std/encoding@^1.0.10": "1.0.10",
     "jsr:@std/fmt@^1.0.7": "1.0.7",
     "jsr:@std/html@^1.0.3": "1.0.3",
@@ -25,9 +24,6 @@
     },
     "@std/cli@1.0.17": {
       "integrity": "e15b9abe629e17be90cc6216327f03a29eae613365f1353837fa749aad29ce7b"
-    },
-    "@std/dotenv@0.225.3": {
-      "integrity": "a95e5b812c27b0854c52acbae215856d9cce9d4bbf774d938c51d212711e8d4a"
     },
     "@std/encoding@1.0.10": {
       "integrity": "8783c6384a2d13abd5e9e87a7ae0520a30e9f56aeeaa3bdf910a3eaaf5c811a1"
@@ -118,7 +114,6 @@
   "workspace": {
     "dependencies": [
       "jsr:@std/assert@1",
-      "jsr:@std/dotenv@~0.225.3",
       "jsr:@std/http@1",
       "npm:@octokit/webhooks@^13.8.0",
       "npm:misskey-js@^2025.4.1-alpha.2"
