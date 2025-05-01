@@ -27,3 +27,6 @@ For the **production** environment:
 ```sh
 deno task deploy-prod
 ```
+
+Please set the environment variables on the Deno Deploy page.
+The contents are the same as the items set in `.env`.
