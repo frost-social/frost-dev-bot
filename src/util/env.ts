@@ -1,4 +1,3 @@
-import "@std/dotenv/load";
 import { Optional } from "./optional.ts";
 import { throws } from "./syntax.ts";
 
